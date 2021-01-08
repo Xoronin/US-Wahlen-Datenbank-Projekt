@@ -6,9 +6,6 @@ const backgroundimg = {
   width: 1920,
   height: 1080,
   backgroundImage: `url(${background})`,
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "center",
   top: 0,
   left: 0,
   position: "absolute"
@@ -24,7 +21,7 @@ const Headline1 = {
   fontSize: 43,
   lineHeight: 1.4,
   letterSpacing: 10,
-  color: "var(--wei_, #ffffff)",
+  color: "#ffffff",
   top: 102,
   left: 120,
   position: "absolute"
@@ -82,7 +79,7 @@ const Headline2 = {
   fontSize: 43,
   lineHeight: 1.4,
   letterSpacing: 10,
-  color: "var(--wei_, #ffffff)",
+  color: "#ffffff",
   top: 385,
   left: 120,
   position: "absolute"
@@ -127,7 +124,7 @@ const Headline3 = {
   fontSize: 43,
   lineHeight: 1.4,
   letterSpacing: 10,
-  color: "var(--wei_, #ffffff)",
+  color: "#ffffff",
   top: 674,
   left: 120,
   position: "absolute"
@@ -171,7 +168,7 @@ const Headline4 = {
   fontSize: 43,
   lineHeight: 1.4,
   letterSpacing: 10,
-  color: "var(--wei_, #ffffff)",
+  color: "#ffffff",
   top: 102,
   left: 1165,
   position: "absolute"
@@ -316,7 +313,7 @@ class Menu extends React.Component {
           <button style={Button10}>Election 2012</button>
         </Link>
         <Link to="/ElectionMap2008">
-          <button style={Button11}>Election 2010</button>
+          <button style={Button11}>Election 2008</button>
         </Link>
         <Link to="/ElectionMap2004">
           <button style={Button12}>Election 2004</button>

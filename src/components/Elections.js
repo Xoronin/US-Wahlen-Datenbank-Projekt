@@ -46,11 +46,47 @@ const MenuButton = {
   position: "absolute"
 };
 
+const SearchBar = ({ keyword, setKeyword }) => {
+  const barstyle = {
+    width: 1380,
+    height: 30,
+    background: "#F2F1F9",
+    border: "none",
+    padding: "0.5rem",
+    top: 130,
+    left: 470,
+    position: "absolute"
+  };
+  return (
+    <input
+      style={barstyle}
+      font={true}
+      fontFamily={"Sunflower"}
+      keyboard={"search"}
+      placeholder={"Search for states..."}
+      backgroundColor={"#EBEBEB"}
+      border={"rgba(0,0,0,0)"}
+      borderWidth={1}
+      focusColor={"#09F"}
+      focused={false}
+      fontSize={16}
+      multiLine={false}
+      padding={15}
+      password={false}
+      placeholderColor={"#aaa"}
+      radius={8}
+      textColor={"#333"}
+      value={""}
+    />
+  );
+};
+
 class Elections extends React.Component {
   render() {
     return (
       <div className="Elections" style={backgroundimg}>
         <h1 style={Headline}>Elections</h1>
+        <SearchBar></SearchBar>
         <Link to="/Menu">
           <button style={MenuButton}>Menu</button>
         </Link>
