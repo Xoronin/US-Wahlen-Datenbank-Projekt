@@ -58,4 +58,4 @@ class CompareElections extends React.Component {
   }
 }
 
-export { CompareElections };
+export default CompareElections;

@@ -131,4 +131,4 @@ class States extends React.Component {
   }
 }
 
-export { States };
+export default States;

@@ -77,4 +77,4 @@ class StatesMap extends React.Component {
   }
 }
 
-export { StatesMap };
+export default StatesMap;

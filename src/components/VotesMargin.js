@@ -59,4 +59,4 @@ class VotesMargin extends React.Component {
   }
 }
 
-export { VotesMargin };
+export default VotesMargin;

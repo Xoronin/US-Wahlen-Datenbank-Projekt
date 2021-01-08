@@ -59,4 +59,4 @@ class VotesPercentage extends React.Component {
   }
 }
 
-export { VotesPercentage };
+export default VotesPercentage;

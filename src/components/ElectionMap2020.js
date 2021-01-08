@@ -61,4 +61,4 @@ class ElectionMap2020 extends React.Component {
   }
 }
 
-export { ElectionMap2020 };
+export default ElectionMap2020;

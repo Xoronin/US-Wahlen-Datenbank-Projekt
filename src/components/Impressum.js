@@ -89,4 +89,4 @@ class Impressum extends React.Component {
   }
 }
 
-export { Impressum };
+export default Impressum;

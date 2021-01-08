@@ -122,4 +122,4 @@ class Candidates extends React.Component {
   }
 }
 
-export { Candidates };
+export default Candidates;

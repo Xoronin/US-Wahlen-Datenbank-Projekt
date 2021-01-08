@@ -95,4 +95,4 @@ class Elections extends React.Component {
   }
 }
 
-export { Elections };
+export default Elections;
