@@ -9,7 +9,10 @@ const usflag1 = {
   backgroundImage: `url(${usflag})`,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
-  backgroundPosition: "center"
+  backgroundPosition: "center",
+  top: 0,
+  left: 0,
+  position: "absolute"
 };
 
 const headline = {
@@ -22,7 +25,7 @@ const headline = {
   fontSize: 126,
   letterSpacing: 9,
   color: "#212954",
-  top: 590,
+  top: 585,
   left: 200,
   position: "absolute"
 };
@@ -35,8 +38,8 @@ const Button1 = {
   disabled: false,
   padding: 10,
   radius: 8,
-  top: 990,
-  left: 370,
+  top: 959,
+  left: 350,
   position: "absolute"
 };
 

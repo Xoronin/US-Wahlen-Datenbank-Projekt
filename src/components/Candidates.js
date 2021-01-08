@@ -8,7 +8,10 @@ const backgroundimg = {
   backgroundImage: `url(${background})`,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
-  backgroundPosition: "center"
+  backgroundPosition: "center",
+  top: 0,
+  left: 0,
+  position: "absolute"
 };
 
 const Headline = {
@@ -24,7 +27,7 @@ const Headline = {
   fontStyle: "normal",
   fontFamily: `"Bebas Neue", serif`,
   letterSpacing: 20,
-  top: 1,
+  top: 0,
   left: 20,
   position: "absolute"
 };

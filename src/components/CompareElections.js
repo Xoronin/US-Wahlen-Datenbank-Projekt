@@ -8,9 +8,11 @@ const backgroundimg = {
   backgroundImage: `url(${background})`,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
-  backgroundPosition: "center"
+  backgroundPosition: "center",
+  top: 0,
+  left: 0,
+  position: "absolute"
 };
-
 const Headline = {
   width: 900,
   height: 78,

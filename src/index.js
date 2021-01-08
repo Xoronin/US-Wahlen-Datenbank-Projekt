@@ -17,6 +17,8 @@ import { ElectionMap2012 } from "./components/ElectionMap2012";
 import { ElectionMap2008 } from "./components/ElectionMap2008";
 import { ElectionMap2004 } from "./components/ElectionMap2004";
 import { ElectionMap2000 } from "./components/ElectionMap2000";
+import { StatesMap } from "./components/StatesMap";
+import { Impressum } from "./components/Impressum";
 
 ReactDOM.render(
   <Router>
@@ -36,6 +38,8 @@ ReactDOM.render(
       <Route exact path="/ElectionMap2008" component={ElectionMap2008} />
       <Route exact path="/ElectionMap2004" component={ElectionMap2004} />
       <Route exact path="/ElectionMap2000" component={ElectionMap2000} />
+      <Route exact path="/StatesMap" component={StatesMap} />
+      <Route exact path="/Impressum" component={Impressum} />
     </Switch>
   </Router>,
   document.getElementById("root")

@@ -8,7 +8,10 @@ const backgroundimg = {
   backgroundImage: `url(${background})`,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
-  backgroundPosition: "center"
+  backgroundPosition: "center",
+  top: 0,
+  left: 0,
+  position: "absolute"
 };
 
 const Headline1 = {
@@ -22,7 +25,7 @@ const Headline1 = {
   lineHeight: 1.4,
   letterSpacing: 10,
   color: "var(--wei_, #ffffff)",
-  top: 122,
+  top: 102,
   left: 120,
   position: "absolute"
 };
@@ -36,7 +39,7 @@ const Button1 = {
   disabled: false,
   padding: 10,
   radius: 8,
-  top: 250,
+  top: 230,
   left: 120,
   position: "absolute"
 };
@@ -50,7 +53,7 @@ const Button2 = {
   disabled: false,
   padding: 10,
   radius: 8,
-  top: 250,
+  top: 230,
   left: 423,
   position: "absolute"
 };
@@ -64,7 +67,7 @@ const Button3 = {
   disabled: false,
   padding: 10,
   radius: 8,
-  top: 250,
+  top: 230,
   left: 726,
   position: "absolute"
 };
@@ -80,7 +83,7 @@ const Headline2 = {
   lineHeight: 1.4,
   letterSpacing: 10,
   color: "var(--wei_, #ffffff)",
-  top: 405,
+  top: 385,
   left: 120,
   position: "absolute"
 };
@@ -94,7 +97,7 @@ const Button4 = {
   disabled: false,
   padding: 10,
   radius: 8,
-  top: 540,
+  top: 520,
   left: 120,
   position: "absolute"
 };
@@ -109,7 +112,7 @@ const Button5 = {
   disabled: false,
   padding: 10,
   radius: 8,
-  top: 540,
+  top: 520,
   left: 423,
   position: "absolute"
 };
@@ -125,7 +128,7 @@ const Headline3 = {
   lineHeight: 1.4,
   letterSpacing: 10,
   color: "var(--wei_, #ffffff)",
-  top: 694,
+  top: 674,
   left: 120,
   position: "absolute"
 };
@@ -139,7 +142,7 @@ const Button6 = {
   disabled: false,
   padding: 10,
   radius: 8,
-  top: 830,
+  top: 810,
   left: 120,
   position: "absolute"
 };
@@ -153,7 +156,7 @@ const Button7 = {
   disabled: false,
   padding: 10,
   radius: 8,
-  top: 830,
+  top: 810,
   left: 423,
   position: "absolute"
 };
@@ -169,7 +172,7 @@ const Headline4 = {
   lineHeight: 1.4,
   letterSpacing: 10,
   color: "var(--wei_, #ffffff)",
-  top: 122,
+  top: 102,
   left: 1165,
   position: "absolute"
 };
@@ -183,7 +186,7 @@ const Button8 = {
   disabled: false,
   padding: 10,
   radius: 8,
-  top: 260,
+  top: 240,
   left: 1333,
   position: "absolute"
 };
@@ -197,7 +200,7 @@ const Button9 = {
   disabled: false,
   padding: 10,
   radius: 8,
-  top: 380,
+  top: 360,
   left: 1333,
   position: "absolute"
 };
@@ -211,7 +214,7 @@ const Button10 = {
   disabled: false,
   padding: 10,
   radius: 8,
-  top: 500,
+  top: 480,
   left: 1333,
   position: "absolute"
 };
@@ -225,7 +228,7 @@ const Button11 = {
   disabled: false,
   padding: 10,
   radius: 8,
-  top: 620,
+  top: 600,
   left: 1333,
   position: "absolute"
 };
@@ -239,7 +242,7 @@ const Button12 = {
   disabled: false,
   padding: 10,
   radius: 8,
-  top: 740,
+  top: 720,
   left: 1333,
   position: "absolute"
 };
@@ -253,8 +256,24 @@ const Button13 = {
   disabled: false,
   padding: 10,
   radius: 8,
-  top: 860,
+  top: 840,
   left: 1333,
+  position: "absolute"
+};
+
+const impressum = {
+  width: 195,
+  height: 39,
+  overflow: "visible",
+  fontWeight: 400,
+  fontStyle: "normal",
+  fontFamily: `"Bebas Neue", serif`,
+  lineHeight: 1.4,
+  letterSpacing: 10,
+  color: "#212954",
+  fontSize: 28,
+  top: 1020,
+  left: 1714,
   position: "absolute"
 };
 
@@ -304,6 +323,9 @@ class Menu extends React.Component {
         </Link>
         <Link to="/ElectionMap2000">
           <button style={Button13}>Election 2000</button>
+        </Link>
+        <Link to="/Impressum">
+          <button style={impressum}>Impressum</button>
         </Link>
       </div>
     );

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import background from "./pictures/background.jpg";
-import mapsmall from "./pictures/mapsmall.jpg";
+import impressum from "./pictures/impressum.png";
 
 const backgroundimg = {
   width: 1920,
@@ -15,50 +15,49 @@ const backgroundimg = {
   position: "absolute"
 };
 
-const map = {
-  width: 418,
-  height: 271,
-  overflow: "visible",
-  backgroundImage: "url(/* Bild5.png */)",
+const imp = {
+  width: 1760,
+  height: 920,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
-  top: 394,
-  left: 20,
-  position: "absolute"
-};
-
-const text = {
-  width: 339,
-  height: 19,
-  overflow: "visible",
-  fontWeight: 300,
-  fontStyle: "normal",
-  fontFamily: `"Sunflower", serif`,
-  color: "#000000",
-  fontSize: 16,
-  letterSpacing: 0,
-  lineHeight: 1.2,
-  top: 650,
-  left: 50,
+  top: 150,
+  left: 70,
   position: "absolute"
 };
 
 const Headline = {
-  width: 440,
-  height: 78,
+  width: 424,
+  height: 82,
   overflow: "visible",
   color: "#000000",
   lineHeight: 1.2,
   textTransform: "uppercase",
   textDecoration: "underline",
-  fontSize: 65,
+  fontSize: 68,
   fontWeight: 400,
   fontStyle: "normal",
   fontFamily: `"Bebas Neue", serif`,
   letterSpacing: 20,
   top: 0,
-  left: 80,
+  left: 740,
+  position: "absolute"
+};
+
+const text = {
+  width: 1000,
+  height: 894,
+  overflow: "visible",
+  color: "#000000",
+  lineHeight: 1.4,
+  letterSpacing: 0,
+  textAlign: "center",
+  fontWeight: 300,
+  fontStyle: "normal",
+  fontFamily: `"Sunflower", serif`,
+  fontSize: 48,
+  top: 176,
+  left: 436,
   position: "absolute"
 };
 
@@ -76,17 +75,12 @@ const MenuButton = {
   position: "absolute"
 };
 
-class States extends React.Component {
+class Impressum extends React.Component {
   render() {
     return (
-      <div className="States" style={backgroundimg}>
-        <Link to="/StatesMap">
-          <img src={mapsmall} style={map} alt="map" />
-        </Link>
-        <h1 style={text}>
-          Click on the picture to see the full map of all states
-        </h1>
-        <h1 style={Headline}>States</h1>
+      <div className="Impressum" style={backgroundimg}>
+        <h1 style={Headline}>Impressum</h1>
+        <img src={impressum} style={imp} alt="impressum" />
         <Link to="/Menu">
           <button style={MenuButton}>Menu</button>
         </Link>
@@ -95,4 +89,4 @@ class States extends React.Component {
   }
 }
 
-export { States };
+export { Impressum };
